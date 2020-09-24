@@ -82,12 +82,6 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git $DIR/openwrt/p
 
 git clone https://github.com/tty228/luci-app-serverchan.git $DIR/openwrt/package/openwrt-packages/luci-app-serverchan
 
-
-# remake
-cp $DIR/zzz-default-settings.bak $DIR/openwrt/package/lean/default-settings/files/zzz-default-settings -rf
-cp $DIR/config_generate.bak $DIR/openwrt/package/base-files/files/bin/config_generate  -rf
-cd $DIR/openwrt
-
 #$DIR/version.sh
 version=`cat $DIR/openwrt/package/lean/default-settings/files/zzz-default-settings| grep "DISTRIB_REVISION='R"| sed "s/.*DISTRIB_REVISION='R\(.*\)/\1/"| cut -d "'" -f1`
 echo $version
