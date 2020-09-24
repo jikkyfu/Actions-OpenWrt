@@ -43,7 +43,7 @@ cp $DIR/kenzok8/openwrt-packages/adguardhome $DIR/openwrt/package/openwrt-packag
 cp $DIR/kenzok8/openwrt-packages/luci-app-advancedsetting $DIR/openwrt/package/openwrt-packages/ -rf
 
 ##kenzok8-theme
-cp $DIR/kenzok8/openwrt-packages/luci-theme-* $DIR/openwrt/feeds/luci/themes/ -rf
+cp $DIR/kenzok8/openwrt-packages/luci-theme-*  $DIR/openwrt/package/openwrt-packages/ -rf
 
 
 ##kenzok8-smartdns
